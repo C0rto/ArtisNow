@@ -42,7 +42,7 @@ Variables
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
-  --radius: 0.5rem;
+  --radius: 1.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
@@ -73,7 +73,7 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.nav-logo) {
+img {
   width: 100%;
   display: block;
 }
@@ -177,6 +177,9 @@ p {
   margin-bottom: 4rem;
   text-align: center;
 }
+.bg-grey {
+  background: var(--clr-grey-10);
+}
 /*
 =============== 
 Navbar
@@ -210,7 +213,7 @@ Navbar
   cursor: pointer;
   justify-self: end;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav {
     background: var(--clr-primary-10);
   }
@@ -333,6 +336,7 @@ Hero
 .hero {
   background: var(--clr-primary-10);
 }
+
 .hero-center {
   min-height: calc(100vh - 5rem);
   display: grid;
@@ -340,12 +344,16 @@ Hero
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
+  line-height: 1.5rem;
 }
 .hero-icons {
   justify-items: start;
 }
 .hero-btn {
-  margin-top: 1.25rem;
+  margin-top: 1.75rem;
+  min-height: 3rem;
+  padding: 1rem;
+  border-radius: 50px;
 }
 @media screen and (min-width: 992px) {
   .hero-img {
@@ -355,7 +363,8 @@ Hero
   .hero-center {
     grid-template-columns: 1fr 1fr;
   }
-  .hero-img::before {
+  .hero-img::before,
+  .about-img::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -393,13 +402,56 @@ About
 .about-img {
   justify-self: center;
 }
-
+@media screen and (min-width: 768px) {
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-img {
+    position: relative;
+  }
+  /* overriding stile of before border on the about section */
+  .about-img::before {
+    left: -2rem;
+  }
+}
 /*
 =============== 
 Services
 ===============
 */
+.service {
+  background: var(--clr-white);
+  margin-bottom: 2rem;
+  padding: 3rem 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+.service p {
+  transition: var(--transition);
+}
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+.service:hover .underline {
+  background: var(--clr-white);
+}
+
 /* small screen layout setup */
+
 /* bg-grey in globals */
 
 /*
