@@ -636,9 +636,19 @@ Connect
 }
 .video-banner {
   background: rgba(255, 255, 255, 0.6);
-  padding: 6rem;
-  margin: 5rem;
+  padding: 3rem;
+  margin: 5rem auto;
   text-align: center;
+  max-width: 22rem;
+}
+@media screen and (min-width: 658px) {
+  .video-banner {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+    max-width: 35rem;
+  }
 }
 
 /*
