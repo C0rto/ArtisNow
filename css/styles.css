@@ -26,23 +26,23 @@ Variables
   --clr-primary-9: hsl(217, 61%, 88%);
   --clr-primary-10: hsl(217, 61%, 96%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(232, 47%, 16%);
-  --clr-grey-2: hsl(232, 47%, 25%);
-  --clr-grey-3: hsl(232, 47%, 30%);
-  --clr-grey-4: hsl(232, 47%, 39%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(232, 47%, 49%);
-  --clr-grey-6: hsl(232, 47%, 60%);
-  --clr-grey-7: hsl(232, 47%, 70%);
-  --clr-grey-8: hsl(232, 47%, 80%);
-  --clr-grey-9: hsl(232, 47%, 89%);
-  --clr-grey-10: hsl(232, 47%, 96%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
-  --radius: 1.5rem;
+  --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
@@ -132,7 +132,7 @@ p {
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
+  color: var(--clr-white);
   padding: 0.775rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -143,11 +143,11 @@ p {
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
+  border-radius: 50px;
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-7);
+  color: var(--clr-white);
+  background: var(--clr-primary-8);
 }
 /* section */
 .section {
@@ -194,7 +194,7 @@ Navbar
   display: grid;
   align-items: center;
   transition: var(--transition);
-  background: var(--clr-primary-10);
+  background: var(--clr-grey-10);
 }
 .nav-center {
   width: 100%;
@@ -332,7 +332,7 @@ Hero
   display: none;
 }
 .hero {
-  background: var(--clr-primary-10);
+  background: var(--clr-grey-10);
 }
 
 .hero-center {
@@ -342,7 +342,8 @@ Hero
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
-  line-height: 1.5rem;
+  line-height: 2.5rem;
+  text-transform: initial;
 }
 .hero-icons {
   justify-items: start;
@@ -492,7 +493,7 @@ Projects
 .project-7 .project-img {
   transform: scale(1.17);
   border-radius: 50%;
-  height: 700px;
+  height: 600px;
 }
 .project h4 {
   font-size: 1.5rem;
@@ -555,10 +556,10 @@ Projects
 }
 .project:hover::after {
   opacity: 1;
-  transform: scale(0.75);
+  transform: scale(0.85);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 722px) {
   .projects-center {
     display: grid;
     gap: 1.5rem;
@@ -655,34 +656,27 @@ Connect
 }
 .video-banner {
   background: rgba(255, 255, 255, 0.6);
-  padding: 3rem;
-  margin: 5rem auto;
+  padding: 3rem 2rem;
   text-align: center;
-  max-width: 22rem;
+  max-width: 40rem;
 }
-@media screen and (max-width: 658px) {
+@media screen and (max-width: 728px) {
   .connect {
-    background: var(--clr-primary-9);
-    height: 50vh;
+    background: var(--clr-grey-10);
+    padding: 7rem 0 5rem 0;
   }
-  .video-banner {
-    position: absolute;
-    top: 50;
-    left: 50;
-    margin: 0 auto;
-    width: 100%;
-    width: 100%;
-    background: var(--clr-grey-5);
-    color: var(--clr-primary-1);
 
-    border-radius: var(--radius);
+  .video-banner {
+    margin: 0 1rem;
+    background: transparent;
   }
   .video-text {
-    color: var(--clr-white);
+    color: var(--clr-grey-5);
+    line-height: 2rem;
+    font-size: 1rem;
   }
   .video-container {
     display: none;
-    background: var(--clr-grey-5);
   }
 }
 
