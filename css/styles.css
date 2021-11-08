@@ -194,6 +194,7 @@ Navbar
   display: grid;
   align-items: center;
   transition: var(--transition);
+  background: var(--clr-primary-10);
 }
 .nav-center {
   width: 100%;
@@ -214,9 +215,6 @@ Navbar
   justify-self: end;
 }
 @media screen and (min-width: 1024px) {
-  .nav {
-    background: var(--clr-primary-10);
-  }
   .nav-btn {
     display: none;
   }
