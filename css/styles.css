@@ -543,7 +543,7 @@ Projects
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(9, 500px);
+    grid-template-rows: repeat(9, 300px);
     grid-template-areas:
       "a a c"
       "b b c"
@@ -555,7 +555,7 @@ Projects
       "i i i"
       "l l h";
   }
-  .project-img {
+  .project-img:not(.nav-logo) {
     height: 100%;
   }
   .project {
