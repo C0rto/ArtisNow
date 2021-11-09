@@ -435,7 +435,7 @@ Projects
 .project {
   position: relative;
   background: var(--clr-grey-1);
-  border-radius: var(--radius);
+  /* border-radius: var(--radius); */
   margin-bottom: 2rem;
   margin-top: 2.5rem;
   overflow: hidden;
@@ -474,7 +474,7 @@ Projects
 }
 .project-img {
   transition: var(--transition);
-  border-radius: var(--radius);
+  /* border-radius: var(--radius); */
   object-fit: cover;
   -webkit-box-shadow: 5px 10px 17px -1px #6f6f6f;
   -moz-box-shadow: 5px 10px 17px -1px #6f6f6f;
@@ -498,7 +498,7 @@ Projects
   transition: var(--transition);
   opacity: 0;
 }
-/* this is so rud8 */
+/* this is rude but functional */
 .project-7 .project::after {
   content: "";
   position: absolute;
@@ -790,7 +790,7 @@ Single Page
 }
 .about-grid {
   display: grid;
-  gap: 5rem;
+  gap: 1rem 3rem;
   align-items: center;
 }
 .photo-abt {
@@ -803,7 +803,7 @@ Single Page
 }
 .contact-box {
   border-radius: 2rem;
-  padding: 5rem;
+  padding: 3.5rem;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
