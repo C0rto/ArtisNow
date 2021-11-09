@@ -668,7 +668,7 @@ Blog
 .card {
   height: 32rem;
   max-width: 26rem;
-  margin: 3rem 2.5rem;
+  margin: 3rem 3.2rem;
   position: relative;
   perspective: 1500px;
 }
@@ -726,11 +726,13 @@ Blog
   color: var(--clr-primary-5);
   font-size: 0.75rem;
 }
+
 .blog-center {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   gap: 3rem 1rem;
 }
+
 /*
 =============== 
 Footer
