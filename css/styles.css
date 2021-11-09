@@ -572,17 +572,21 @@ Projects
 /* fix for oblò image */
 @media screen and (max-width: 992px) {
   .project-7 .project-img {
-    height: 800px;
+    height: 600px;
+    transform: scale(1.5);
   }
 }
-@media screen and (max-width: 722px) {
+@media screen and (max-width: 580px) {
   .project-7 .project-img {
-    height: 600px;
+    height: 500px;
+    transform: scale(1.5);
   }
 }
 @media screen and (max-width: 552px) {
   .project-7 .project-img {
-    height: 450px;
+    height: 340px;
+
+    overflow: hidden;
   }
 }
 
