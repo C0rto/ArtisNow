@@ -290,7 +290,6 @@ Sidebar
 .social-icon {
   display: grid;
   margin-top: 3rem;
-  width: 100%;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   justify-items: center;
@@ -666,7 +665,7 @@ Blog
   background: var(--clr-grey-10);
 }
 .card {
-  height: 32rem;
+  height: 33rem;
   max-width: 26rem;
   margin: 3rem 3rem;
   position: relative;
@@ -685,6 +684,8 @@ Blog
   height: 100%;
   border-radius: 2rem;
   box-shadow: var(--light-shadow);
+  -webkit-transform: translate3d(0, 0, 0);
+  visibility: visible;
 }
 .card-back {
   background: var(--clr-primary-7);
@@ -701,6 +702,10 @@ Blog
 /* rest of */
 .card-info {
   padding: 2rem 1.5rem;
+}
+.card-info h4 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 .card-front img {
   height: 15rem;
@@ -735,7 +740,10 @@ Blog
   .blog-center {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-    gap: 3rem 1rem;
+    gap: 1rem 1rem;
+  }
+  .card {
+    height: 37rem;
   }
 }
 
