@@ -42,7 +42,7 @@ Variables
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
-  --radius: 0.5rem;
+  --radius: 2rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
@@ -788,27 +788,30 @@ Single Page
 .contact-photo {
   width: 100%;
 }
-.about-grid {
-  display: grid;
-  gap: 1rem 3rem;
-  align-items: center;
-}
 .photo-abt {
   border-radius: 2rem;
 }
-@media screen and (min-width: 992px) {
-  .about-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 .contact-box {
   border-radius: 2rem;
-  padding: 3.5rem;
+  padding: 2.5rem;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
+}
+@media screen and (min-width: 992px) {
+  .contact-box {
+    padding: 5rem;
+  }
 }
 /*
 =============== 
 Products Page
 ===============
 */
+.project-page {
+  padding-bottom: 2rem;
+}
+.project-img {
+  width: 100vw;
+  max-width: 100%;
+  object-fit: cover;
+}
