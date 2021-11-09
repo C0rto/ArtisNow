@@ -417,59 +417,12 @@ About
 }
 /*
 =============== 
-Services
-===============
-*/
-.service {
-  background: var(--clr-white);
-  margin-bottom: 2rem;
-  padding: 3rem 1.5rem;
-  border-radius: var(--radius);
-  text-align: center;
-  transition: var(--transition);
-}
-.service-icon {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-.service .underline {
-  width: 3rem;
-  height: 0.12rem;
-  transition: var(--transition);
-}
-.service p {
-  transition: var(--transition);
-}
-.service:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
-}
-.service:hover p {
-  color: var(--clr-white);
-}
-.service:hover .underline {
-  background: var(--clr-white);
-}
-
-@media screen and (min-width: 676px) {
-  .services-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .services-center {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-/* bg-grey in globals */
-
-/*
-=============== 
 Projects
 ===============
 */
+.projects {
+  background: var(--clr-grey-10);
+}
 .project-text {
   width: 85vw;
   max-width: 38rem;
@@ -494,7 +447,6 @@ Projects
 .project-7 .project-img {
   transform: scale(1.17);
   border-radius: 50%;
-  height: 600px;
 }
 .project h4 {
   font-size: 1.5rem;
@@ -560,7 +512,7 @@ Projects
   transform: scale(0.85);
 }
 
-@media screen and (min-width: 722px) {
+@media screen and (min-width: 992px) {
   .projects-center {
     display: grid;
     gap: 1.5rem;
@@ -613,6 +565,17 @@ Projects
     grid-area: l;
   }
 }
+@media screen and (max-width: 992px) {
+  .project-7 .project-img {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 722px) {
+  .project-7 .project-img {
+    height: 600px;
+  }
+}
+
 /*
 =============== 
 Connect
@@ -663,7 +626,6 @@ Connect
 }
 @media screen and (max-width: 728px) {
   .connect {
-    background: var(--clr-grey-10);
     padding: 7rem 0 5rem 0;
   }
 
@@ -679,63 +641,6 @@ Connect
   .video-container {
     display: none;
   }
-}
-
-/*
-=============== 
-Skills
-===============
-*/
-@media screen and (min-width: 769px) {
-  .skills-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-  }
-}
-.skills {
-  background: var(--clr-primary-8);
-  margin-bottom: 5rem;
-}
-.skills h3 {
-  margin: 1.5rem 0;
-  color: var(--clr-primary-1);
-}
-.skill {
-  margin-bottom: 1.25rem;
-}
-.skill p {
-  margin-bottom: 0.5rem;
-  text-transform: capitalize;
-  color: var(--clr-primary-1);
-}
-.skill-container {
-  background: var(--clr-white);
-  height: 1.2rem;
-  border-radius: var(--radius);
-  width: 100%;
-  position: relative;
-}
-.skill-value {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--clr-primary-5);
-  height: 100%;
-  width: 50%;
-  border-radius: var(--radius);
-}
-.value-70 {
-  width: 70%;
-}
-.skill-text {
-  position: absolute;
-  top: -2rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.skill-text-70 {
-  left: 70%;
 }
 /*
 =============== 
@@ -806,8 +711,8 @@ Blog
   background: var(--clr-grey-10);
 }
 .card {
-  height: 35rem;
-  max-width: 38rem;
+  height: 32rem;
+  max-width: 26rem;
   margin: 3rem 2.5rem;
   position: relative;
   perspective: 1500px;
@@ -816,7 +721,7 @@ Blog
   background: var(--clr-white);
 }
 .card-side {
-  transition: all 1s linear;
+  transition: all 0.8s linear;
   backface-visibility: hidden;
   position: absolute;
   top: 0;
@@ -826,7 +731,7 @@ Blog
   border-radius: 2rem;
 }
 .card-back {
-  background: var(--clr-primary-10);
+  background: var(--clr-primary-7);
   transform: rotateY(180deg);
   display: grid;
   place-items: center;
@@ -839,10 +744,10 @@ Blog
 }
 /* rest of */
 .card-info {
-  padding: 1rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 .card-front img {
-  height: 17rem;
+  height: 15rem;
   object-fit: cover;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
