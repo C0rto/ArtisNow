@@ -290,9 +290,11 @@ Sidebar
 .social-icon {
   display: grid;
   margin-top: 3rem;
-  width: 20rem;
-  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   justify-items: center;
+  align-items: center;
 }
 .social-icons {
   font-size: 1.5rem;
