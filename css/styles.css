@@ -137,7 +137,6 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -221,6 +220,7 @@ Navbar
   .nav-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
     justify-items: center;
     justify-self: end;
@@ -379,6 +379,7 @@ Hero
 .hero-photo {
   max-width: 25rem;
   max-height: 30rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
   position: relative;
@@ -440,8 +441,6 @@ Projects
   margin-bottom: 2rem;
   margin-top: 2.5rem;
   overflow: hidden;
-  -webkit-box-shadow: 5px 10px 17px -1px #6f6f6f;
-  -moz-box-shadow: 5px 10px 17px -1px #6f6f6f;
   -o-box-shadow: 5px 10px 17px -1px #6f6f6f;
   box-shadow: 5px 10px 17px -1px #6f6f6f;
 }
@@ -476,9 +475,8 @@ Projects
 .project-img {
   transition: var(--transition);
   /* border-radius: var(--radius); */
+  -o-object-fit: cover;
   object-fit: cover;
-  -webkit-box-shadow: 5px 10px 17px -1px #6f6f6f;
-  -moz-box-shadow: 5px 10px 17px -1px #6f6f6f;
   -o-box-shadow: 5px 10px 17px -1px #6f6f6f;
   box-shadow: 5px 10px 17px -1px #6f6f6f;
 }
@@ -608,6 +606,7 @@ Connect
   left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   z-index: -2;
 }
@@ -676,6 +675,7 @@ Blog
 }
 .card-side {
   transition: all 0.8s linear;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
   top: 0;
@@ -709,6 +709,7 @@ Blog
 }
 .card-front img {
   height: 15rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -722,6 +723,7 @@ Blog
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .card-footer p {
@@ -823,5 +825,6 @@ Products Page
 .project-img {
   width: 100vw;
   max-width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
